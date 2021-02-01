@@ -24,5 +24,15 @@ namespace MvvmTaskManagementSystem.Views
         {
             InitializeComponent();
         }
+
+        private void statusTask_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

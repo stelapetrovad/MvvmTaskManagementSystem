@@ -72,12 +72,12 @@ namespace MvvmTaskManagementSystem.Models
             set { taskType = value; OnPropertyChanged("TaskType"); }
         }
 
-        private string user;
+        private string usersTask;
 
-        public string User
+        public string UsersTask
         {
-            get { return user; }
-            set { user = value; OnPropertyChanged("User"); }
+            get { return usersTask; }
+            set { usersTask = value; OnPropertyChanged("UsersTask"); }
         }
 
     }

@@ -12,6 +12,8 @@ namespace MvvmTaskManagementSystem.ViewModels
 {
     public class TaskViewModel : INotifyPropertyChanged
     {
+        public ObservableCollection<string> statusCollection = new ObservableCollection<string>();
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(string propertyName)
         {
@@ -22,6 +24,7 @@ namespace MvvmTaskManagementSystem.ViewModels
         TaskService ObjTaskService;
         public TaskViewModel()
         {
+
             ObjTaskService = new TaskService();
             LoadData();
             CurrentTask = new UserTask();
